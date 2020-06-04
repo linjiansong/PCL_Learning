@@ -7,9 +7,9 @@ PCL与ROS之间的数据转换
 -------------
 * Ptr类型和非Ptr类型相互转换\
 `
-pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_Ptr(new pcl::PointCloud<pcl::PointXYZ>);\
-pcl::PointCloud<pcl::PointXYZ> cloud;\
-cloud=*cloud_Ptr;\
+pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_Ptr(new pcl::PointCloud<pcl::PointXYZ>);<br>
+pcl::PointCloud<pcl::PointXYZ> cloud;<br>
+cloud=*cloud_Ptr;<br>
 cloud_Ptr=cloud.makeShared;
 `
 * Ptr类型和非Ptr类型相互转换
